@@ -1,0 +1,113 @@
+/* HomeStyles.css */
+
+/* Style the home container */
+.home {
+  position: relative; /* Ensure relative positioning for absolute positioning of content */
+}
+
+/* Style the header container */
+.headerContainer {
+  position: relative; /* Ensure relative positioning for absolute positioning of content */
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Style the header container image */
+.headerContainer img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the header content */
+.headerContent {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the header title */
+.headerContainer h1 {
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10px;
+  color: black;
+}
+
+/* Style the header subtitle */
+.headerContainer p {
+  margin-top: 10px; /* Adjust spacing between h1 and p */
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  color: black;
+}
+
+/* Style the header button */
+.headerContent button {
+  background-color: black; /* Set background color to black */
+  color: #ffffff; /* Set text color to white */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the header button */
+.headerContainer button:hover {
+  background-color: #3c09e2; /* Darken the background color on hover */
+}
+
+/* Style the sliding image container */
+.sliding-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Style the sliding image */
+.sliding-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer {
+    margin-left: 10;
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+  .home .headerContainer h1 {
+    font-size: 20px;
+    height: 1px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .home .headerContainer p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: white;
+  }
+  .headerContainer button {
+    background-color: rgb(0, 0, 0);
+    color: #3c09e2;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+}
